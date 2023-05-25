@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Grid } from '@mui/material'
 import AreaCard from './Cards'
+import zIndex from '@mui/material/styles/zIndex'
 
 function YourLibrary() {
 
@@ -13,7 +14,7 @@ function YourLibrary() {
             
         
         
-<Grid 
+                        <Grid 
                         // position='sticky'
                         sx={{
                             border:'1px solid blue',
@@ -24,7 +25,8 @@ function YourLibrary() {
                             //   height:500,
                             width:'30%',
                             position:'fixed',
-                            padding:"10px 0 10px 10px"
+                            padding:"10px 0 10px 10px",
+                            zIndex:1
                             }}
                             item 
                             xs={11}>
@@ -53,18 +55,21 @@ function YourLibrary() {
               xs={11}>
                         
               {/* Your Library */}
-              <div style={{marginTop:'4rem',marginBottom:'1em'}}>
+              <Grid container
+                direction={{sm:"column",xs:'column',md:'row',lg:'row'}}
+
+               style={{marginTop:'4rem',marginBottom:'1em'}}>
 
               {
-                ar.map((data)=>{
+                ar.map((data,index)=>{
                     return(
-                        <div key={data} style={{marginTop:"1rem"}}>
+                        <div key={data+index} style={{marginTop:"1rem"}}>
                             <AreaCard />
                         </div>
                     )
                 })
               }
-           </div>
+           </Grid>
 
             </Grid>
     </div>

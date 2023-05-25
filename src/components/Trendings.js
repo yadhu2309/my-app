@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 
 import AreaCard from './Cards';
 
-function Trendings() {
+function Trendings(props) {
 
     let ar=[1,2,3,4,5,6]
 

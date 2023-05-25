@@ -37,20 +37,6 @@ function HomePage() {
           container
           spacing={2}
           >
-
-            {/* your Library */}
-            
-            {/* <Grid sx={{
-            // border:'1px solid red',
-            hegiht:500,
-            width:"30%",
-            // overflow:'auto'
-            // position:'fixed',
-            }} 
-            item xs={4}>
-           {/* <YourLibrary />  */}
-              
-         {/* </Grid> */}
           <Grid sx={{
             border:'1px solid red',
             hegiht:500,
@@ -70,31 +56,11 @@ function HomePage() {
             }} item xs={8}>
               <ResponsiveAppBar />
 
-              
-                <Trendings/>
-              
-              {/* Recently */}
-              <Grid sx={{
-                // border:"1px solid black",
-                margin:"auto",
-                marginTop:"1em",
-                padding:'10px 0 0 10px'
-                }} 
-                item  xs={11.5}>
-                  Recently
-                <Stack
-                  direction={{sm:"column",xs:'column',md:'row',lg:'row'}}
-                  // divider={<Divider orientation="vertical" flexItem />}
-                  spacing={2}
-                >
-                  <AreaCard/>
-                  <AreaCard/>
-                  <AreaCard/>
- 
-                </Stack>
+              {/* Trendings */}
+                <Trendings />
 
-                
-              </Grid>
+              {/* Recently */}
+                <Trendings />
           </Grid>
        </Grid>
       
