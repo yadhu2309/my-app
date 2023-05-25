@@ -40,22 +40,22 @@ function HomePage() {
 
             {/* your Library */}
             
-            <Grid sx={{
+            {/* <Grid sx={{
             // border:'1px solid red',
             hegiht:500,
             width:"30%",
-            overflow:'auto'
+            // overflow:'auto'
             // position:'fixed',
             }} 
             item xs={4}>
            {/* <YourLibrary />  */}
               
-          </Grid>
+         {/* </Grid> */}
           <Grid sx={{
             border:'1px solid red',
             hegiht:500,
             width:"30%",
-            position:'fixed',
+            // position:'fixed',
 
             }} 
             item xs={4}>

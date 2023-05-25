@@ -13,21 +13,7 @@ function YourLibrary() {
             
         
         
-            <Grid sx={{
-              border:'1px solid blue',
-              margin:'auto',
-              borderRadius:'10px',
-              marginTop:"1rem",
-              height:500,
-              width:'30%',
-              overflow:'auto',
-
-               position:'fixed',
-            //   padding:"10px 0 10px 10px"
-              }}
-              item 
-              xs={11}>
-                        <Grid 
+<Grid 
                         // position='sticky'
                         sx={{
                             border:'1px solid blue',
@@ -36,7 +22,7 @@ function YourLibrary() {
                             borderTopLeftRadius:'10px',
                             // marginTop:"1rem",
                             //   height:500,
-                            width:'inherit',
+                            width:'30%',
                             position:'fixed',
                             padding:"10px 0 10px 10px"
                             }}
@@ -46,18 +32,39 @@ function YourLibrary() {
                 
 
                         </Grid>
+            <Grid sx={{
+              borderBottom:'1px solid blue',
+              borderLeft:'1px solid blue',
+              borderRight:"1px solid blue",
+            //   border:'1px solid blue',
+              margin:'auto',
+              borderBottomRightRadius:'10px',
+              borderBottomLeftRadius:'10px',
+
+              marginTop:"2.6rem",
+              height:500,
+              width:'30%',
+              overflow:'auto',
+
+               position:'fixed',
+                //   padding:"10px 0 10px 10px"
+              }}
+              item 
+              xs={11}>
+                        
               {/* Your Library */}
+              <div style={{marginTop:'4rem',marginBottom:'1em'}}>
 
               {
                 ar.map((data)=>{
                     return(
-                        <div key={data} style={{marginTop:"5rem"}}>
+                        <div key={data} style={{marginTop:"1rem"}}>
                             <AreaCard />
                         </div>
                     )
                 })
               }
-           
+           </div>
 
             </Grid>
     </div>
