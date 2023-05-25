@@ -9,6 +9,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import ResponsiveAppBar from '../components/AppBar'
 import AreaCard from '../components/Cards';
 import Trendings from '../components/Trendings';
+import YourLibrary from '../components/YourLibrary';
 
 
 
@@ -38,28 +39,27 @@ function HomePage() {
           >
 
             {/* your Library */}
-
+            
+            <Grid sx={{
+            // border:'1px solid red',
+            hegiht:500,
+            width:"30%",
+            overflow:'auto'
+            // position:'fixed',
+            }} 
+            item xs={4}>
+           {/* <YourLibrary />  */}
+              
+          </Grid>
           <Grid sx={{
             border:'1px solid red',
             hegiht:500,
-            width:"30%"
+            width:"30%",
+            position:'fixed',
+
             }} 
             item xs={4}>
-            <Grid sx={{
-              border:'1px solid blue',
-              margin:'auto',
-              borderRadius:'10px',
-              marginTop:"1rem",
-              height:500,
-              width:'inherit',
-              position:'fixed',
-              }}
-              item 
-              xs={11}>
-              Your Library
-           
-
-            </Grid>
+           <YourLibrary /> 
               
           </Grid>
 
