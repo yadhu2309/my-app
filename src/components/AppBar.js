@@ -12,6 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -35,8 +37,11 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  const matches = useMediaQuery('(min-width:600px)');
+
+
   return (
-    <AppBar position="sticky">
+    <AppBar position={matches?"sticky":"fixed"}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             {/* icon */}

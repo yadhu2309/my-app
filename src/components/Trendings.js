@@ -48,7 +48,8 @@ function Trendings(props) {
                   content.map((data,index)=>{
                     return(
                           <div key={index+data}
-                          style={{margin:'0 0 10px 10px'}}>
+                          style={{margin:'0 0 10px 10px',display:'flex',
+                          alignContent:'center',justifyContent:'center'}}>
 
                             <AreaCard/>
                           </div>

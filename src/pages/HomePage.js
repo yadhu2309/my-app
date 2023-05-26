@@ -14,7 +14,7 @@ import YourLibrary from '../components/YourLibrary';
 
 
 function HomePage() {
-  const matches = useMediaQuery('(min-width:1000px)');
+  const matches = useMediaQuery('(min-width:600px)');
   console.log("true",matches);
   let ar=[1,2,3,4,5,6]
 
@@ -41,6 +41,7 @@ function HomePage() {
             border:'1px solid red',
             hegiht:500,
             width:"30%",
+          display:matches? "block":'none'
             // position:'fixed',
 
             }} 
@@ -51,16 +52,20 @@ function HomePage() {
 
               {/* ResponsiveAppBar */}
 
-          <Grid sx={{ 
+          <Grid
+           sx={{ padding:0
             // border:'1px solid red'
-            }} item xs={8}>
+            }} item xs={matches?8:12}>
               <ResponsiveAppBar />
+              <div style={{marginTop:matches?0:'5rem'}}>
+                  {/* Trendings */}
 
-              {/* Trendings */}
                 <Trendings title="Trendings"/>
 
-              {/* Recently */}
-                <Trendings title="Recently"/>
+                    {/* Recently */}
+                  <Trendings title="Recently"/>
+              </div>
+              
           </Grid>
        </Grid>
       
