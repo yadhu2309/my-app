@@ -38,7 +38,6 @@ function YourLibrary() {
               borderBottom:'1px solid blue',
               borderLeft:'1px solid blue',
               borderRight:"1px solid blue",
-            //   border:'1px solid blue',
               margin:'auto',
               borderBottomRightRadius:'10px',
               borderBottomLeftRadius:'10px',
@@ -49,7 +48,6 @@ function YourLibrary() {
               overflow:'auto',
 
                position:'fixed',
-                //   padding:"10px 0 10px 10px"
               }}
               item 
               xs={11}>

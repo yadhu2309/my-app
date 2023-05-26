@@ -41,7 +41,7 @@ function ResponsiveAppBar() {
 
 
   return (
-    <AppBar position={matches?"sticky":"fixed"}>
+    <AppBar position={"fixed"}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             {/* icon */}
