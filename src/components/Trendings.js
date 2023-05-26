@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import AreaCard from './Cards';
 
 function Trendings(props) {
+  let title = props.title
 
     let ar=[1,2,3,4,5,6]
 
@@ -26,7 +27,8 @@ function Trendings(props) {
             item  xs={11.5}
             >
               <span>
-                Trendings
+                {/* Title */}
+                  {title}
                 </span>
                 <span style={{color:'blue',
             cursor:'pointer'}} onClick={toggleShowMore}>
