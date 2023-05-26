@@ -57,10 +57,10 @@ function HomePage() {
               <ResponsiveAppBar />
 
               {/* Trendings */}
-                <Trendings />
+                <Trendings title="Trendings"/>
 
               {/* Recently */}
-                <Trendings />
+                <Trendings title="Recently"/>
           </Grid>
        </Grid>
       
